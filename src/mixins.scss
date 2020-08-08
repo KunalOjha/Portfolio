@@ -1,0 +1,7 @@
+@mixin section-background($position) {
+    height: 100vh;
+    border-top: 2px solid black;
+    border-bottom: 3px solid black;
+    background-repeat: no-repeat;
+    background-position: $position;
+  }

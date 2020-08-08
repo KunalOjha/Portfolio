@@ -1,0 +1,9 @@
+@import '../../mixins.scss';
+
+:host {
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-image: url('../../assets/images/section//work-history.jpg');
+    @include section-background(left center);
+}

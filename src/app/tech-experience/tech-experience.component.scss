@@ -4,6 +4,8 @@
     color: white;
     display: flex;
     justify-content: center;
-    background-image: url('../../assets/images/section/intro.png');
+    text-align: center;
+    background-size: cover;
+    background-image: url('../../assets/images/section/tech-experience.jpg');
     @include section-background(center center);
 }
