@@ -1,9 +1,10 @@
 :host {
+    background: black;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 
     video {
         width: auto;
-        height: 100vh;
     }
 }
