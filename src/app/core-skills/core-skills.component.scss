@@ -1,9 +1,11 @@
 @import '../../mixins.scss';
 
 :host {
-    color: black;
-    display: flex;
-    justify-content: center;
     background-image: url('../../assets/images/section/core-skills.jpeg');
     @include section-background(center center);
+
+    .section-title {
+        color: black;
+        margin-top: 50px;
+    }
 }

@@ -1,11 +1,12 @@
 @import '../../mixins.scss';
 
 :host {
-    color: white;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     background-size: cover;
     background-image: url('../../assets/images/section/tech-experience.jpg');
     @include section-background(center center);
+
+    .section-title {
+        color: white;
+        margin-top: 50px;
+    }
 }

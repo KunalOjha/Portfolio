@@ -13,6 +13,9 @@ import { CoreSkillsComponent } from './core-skills/core-skills.component';
 import { WorkHistoryComponent } from './work-history/work-history.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { TechExperienceChartComponent } from './tech-experience/tech-experience-chart/tech-experience-chart.component';
+import { SkillCardsComponent } from './core-skills/skill-cards/skill-cards.component';
+import { SkillCardComponent } from './core-skills/skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +24,13 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     MainComponent,
     IntroComponent,
     TechExperienceComponent,
+    TechExperienceChartComponent,
     CoreSkillsComponent,
     WorkHistoryComponent,
     ProjectsComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    SkillCardsComponent,
+    SkillCardComponent
   ],
   imports: [
     BrowserModule,
