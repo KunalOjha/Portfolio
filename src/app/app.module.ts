@@ -10,12 +10,13 @@ import { MainComponent } from './main/main.component';
 import { IntroComponent } from './intro/intro.component';
 import { TechExperienceComponent } from './tech-experience/tech-experience.component';
 import { CoreSkillsComponent } from './core-skills/core-skills.component';
-import { WorkHistoryComponent } from './work-history/work-history.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { TechExperienceChartComponent } from './tech-experience/tech-experience-chart/tech-experience-chart.component';
 import { SkillCardsComponent } from './core-skills/skill-cards/skill-cards.component';
 import { SkillCardComponent } from './core-skills/skill-card/skill-card.component';
+import { WorkHistoryComponent } from './work-history/work-history.component';
+import { WorkHistoryTimelineComponent } from './work-history/work-history-timeline/work-history-timeline.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +27,12 @@ import { SkillCardComponent } from './core-skills/skill-card/skill-card.componen
     TechExperienceComponent,
     TechExperienceChartComponent,
     CoreSkillsComponent,
-    WorkHistoryComponent,
     ProjectsComponent,
     ContactMeComponent,
     SkillCardsComponent,
-    SkillCardComponent
+    SkillCardComponent,
+    WorkHistoryComponent,
+    WorkHistoryTimelineComponent
   ],
   imports: [
     BrowserModule,
