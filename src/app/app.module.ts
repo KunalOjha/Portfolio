@@ -17,6 +17,8 @@ import { SkillCardsComponent } from './core-skills/skill-cards/skill-cards.compo
 import { SkillCardComponent } from './core-skills/skill-card/skill-card.component';
 import { WorkHistoryComponent } from './work-history/work-history.component';
 import { WorkHistoryTimelineComponent } from './work-history/work-history-timeline/work-history-timeline.component';
+import { ProjectCardsComponent } from './projects/project-cards/project-cards.component';
+import { ProjectCardComponent } from './projects/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { WorkHistoryTimelineComponent } from './work-history/work-history-timeli
     SkillCardsComponent,
     SkillCardComponent,
     WorkHistoryComponent,
-    WorkHistoryTimelineComponent
+    WorkHistoryTimelineComponent,
+    ProjectCardsComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
