@@ -13,19 +13,183 @@ export class TechExperienceChartComponent implements OnInit {
       "name": "Top Level",
       "children": [
         {
-          "name": "Level 2: A",
-          "children": [
-            {
-              "name": "Son of A",
-            },
-            {
-              "name": "Daughter of A",
-            }
+          "name": "Product Management",
+          "children": [{
+            "name": "Waterfall"
+          },
+          {
+            "name": "Agile",
+            "children": [{
+              "name": "Scrum",
+              "children": [{
+                "name": "Daily Standup"
+              },
+              {
+                "name": "Sprint Planning"
+              },
+              {
+                "name": "Product Backlog Refinement"
+              },
+              {
+                "name": "Sprint Review"
+              },
+              {
+                "name": "Sprint Retrospective"
+              },
+              ]
+            }]
+          }
+
           ]
         },
         {
-          "name": "Level 2: B",
-        }
+          "name": "Frontend",
+          "children": [{
+            "name": "HTML",
+            "children": [{
+              "name": "HTML5"
+            }]
+          },
+          {
+            "name": "CSS",
+            "children": [{
+              "name": "CSS3"
+            },
+            {
+              "name": "CSS Frameworks",
+              "children": [{
+                "name": "Bootstrap"
+              },]
+            }
+            ]
+          },
+          {
+            "name": "JavaScript",
+            "children": [{
+              "name": "ES5/6"
+            },
+            {
+              "name": "JavaScript Frameworks",
+              "children": [{
+                "name": "jQuery"
+              },
+              {
+                "name": "Angular"
+              },
+              {
+                "name": "React*"
+              },
+              {
+                "name": "SAPUI5"
+              }
+              ]
+            },
+            ]
+          },
+          {
+            "name": "Preprocessors",
+            "children": [{
+              "name": "SASS"
+            },
+            {
+              "name": "LESS"
+            }
+            ]
+          },
+          {
+            "name": "Dependency Management",
+            "children": [{
+              "name": "Bower"
+            },
+            {
+              "name": "NPM"
+            },
+            ]
+          }
+          ]
+        },
+        {
+          "name": "Backend",
+          "children": [{
+            "name": "Scripting Languages",
+            "children": [{
+              "name": "Node.js"
+            }]
+          },
+          {
+            "name": "Data",
+            "children": [{
+              "name": "MongoDB"
+            },
+            {
+              "name": "SQL*"
+            }
+            ]
+          }
+          ]
+        },
+        {
+          "name": "Version Control",
+          "children": [{
+            "name": "Git"
+          },
+          {
+            "name": "Github"
+          },
+          {
+            "name": "Bitbucket"
+          }
+          ]
+        },
+        {
+          "name": "Build Tools",
+          "children": [{
+            "name": "Task Runners",
+            "children": [{
+              "name": "Grunt"
+            },
+            {
+              "name": "Gulp"
+            }
+            ]
+          },
+          {
+            "name": "AWS Code Deploy"
+          },
+          {
+            "name": "TFS Build"
+          },
+          {
+            "name": "Jenkins"
+          }
+
+          ]
+        },
+        {
+          "name": "Testing",
+          "children": [{
+            "name": "Unit",
+            "children": [{
+              "name": "qUnit"
+            },
+            {
+              "name": "Jasmine"
+            }
+            ]
+          },
+          {
+            "name": "End-to-End",
+            "children": [{
+              "name": "Protractor"
+            },
+            {
+              "name": "NightWatch"
+            }
+            ]
+          }
+
+          ]
+        },
       ]
     }
   ];
@@ -37,7 +201,7 @@ export class TechExperienceChartComponent implements OnInit {
   generateTreeDiagram() {
     const margin = { top: 20, right: 120, bottom: 20, left: 120 },
       width = window.innerWidth / 2 - margin.right - margin.left,
-      height = window.innerHeight / 2 - margin.top - margin.bottom;
+      height = 800;
 
     let i = 0,
       duration = 750,
@@ -50,7 +214,7 @@ export class TechExperienceChartComponent implements OnInit {
       .projection((d) => { return [d.y, d.x]; });
 
     const svg = d3.select(".tech-experience--chart").append("svg")
-      .attr("width", width + margin.right + margin.left)
+      .attr("width", '100%')
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -84,7 +248,7 @@ export class TechExperienceChartComponent implements OnInit {
 
       nodeEnter.append("circle")
         .attr("r", 1e-6)
-        .style("fill", d => d._children ? "#f1a33a" : "#f95c33");
+        .style("fill", d => d._children ? "indianred" : "darkgray");
 
       nodeEnter.append("text")
         .attr("x", d => d.children || d._children ? -13 : 13)
@@ -99,8 +263,8 @@ export class TechExperienceChartComponent implements OnInit {
         .attr("transform", d => "translate(" + d.y + "," + d.x + ")");
 
       nodeUpdate.select("circle")
-        .attr("r", 10)
-        .style("fill", d => d._children ? "#f1a33a" : "#f95c33");
+        .attr("r", 6)
+        .style("fill", d => d._children ? "indianred" : "darkgray");
 
       nodeUpdate.select("text")
         .style("fill-opacity", 1);
