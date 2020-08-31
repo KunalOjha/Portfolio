@@ -1,10 +1,13 @@
 @import '../../mixins.scss';
 
 :host {
-    color: #2a2a2a;
-    display: flex;
-    justify-content: center;
+    justify-content: start;
     background-image: url('../../assets/images/section/projects.jpg');
     background-size: cover;
+    padding: 50px;
     @include section-background(center center);
+
+    .section-title {
+        font-size: 60px;
+    }
 }
