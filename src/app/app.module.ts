@@ -19,6 +19,7 @@ import { WorkHistoryComponent } from './work-history/work-history.component';
 import { WorkHistoryTimelineComponent } from './work-history/work-history-timeline/work-history-timeline.component';
 import { ProjectCardsComponent } from './projects/project-cards/project-cards.component';
 import { ProjectCardComponent } from './projects/project-card/project-card.component';
+import { ContactCarouselComponent } from './contact-me/contact-carousel/contact-carousel.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ProjectCardComponent } from './projects/project-card/project-card.compo
     WorkHistoryComponent,
     WorkHistoryTimelineComponent,
     ProjectCardsComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    ContactCarouselComponent
   ],
   imports: [
     BrowserModule,
