@@ -3,8 +3,14 @@
 :host {
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    text-align: center;
     background-image: url('../../assets/images/section/contact-me.jpg');
     background-size: cover;
     @include section-background(center center);
+
+    .section-title {
+        font-size: 60px;
+        top: 0;
+    }
 }
