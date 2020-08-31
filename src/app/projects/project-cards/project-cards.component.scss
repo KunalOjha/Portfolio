@@ -1,11 +1,10 @@
 :host {
-    margin-top: 50px;
-    
+    position: relative;
+    top: 75px;
+
     .project-cards-container {
         display: flex;
         justify-content: center;
-        padding-left: 15%;
-        padding-right: 15%;
         padding-bottom: 50px;
     }
 }

@@ -10,7 +10,7 @@ export class TechExperienceChartComponent implements OnInit {
 
   techExperience = [
     {
-      "name": "Top Level",
+      "name": "Environments",
       "children": [
         {
           "name": "Product Management",
@@ -70,18 +70,22 @@ export class TechExperienceChartComponent implements OnInit {
             },
             {
               "name": "JavaScript Frameworks",
-              "children": [{
-                "name": "jQuery"
-              },
-              {
-                "name": "Angular"
-              },
-              {
-                "name": "React*"
-              },
-              {
-                "name": "SAPUI5"
-              }
+              "children": [
+                {
+                  "name": "Angular"
+                },
+                {
+                  "name": "AngularJS"
+                },
+                {
+                  "name": "React"
+                },
+                {
+                  "name": "SAPUI5"
+                },
+                {
+                  "name": "jQuery"
+                }
               ]
             },
             ]

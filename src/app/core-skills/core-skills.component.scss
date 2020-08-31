@@ -2,7 +2,7 @@
 
 :host {
     background-image: url('../../assets/images/section/core-skills.jpeg');
-    @include section-background(center center);
+    @include section-background(center left);
 
     .section-title {
         color: black;
