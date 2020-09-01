@@ -1,9 +1,13 @@
-@import '../../mixins.scss';
+@import '../../assets/css/global.mixins.scss';
+@import '../../assets/css/responsive.mixins.scss';
 
 :host {
     background-size: cover;
     background-image: url('../../assets/images/section/tech-experience.jpg');
     @include section-background(center center);
+    @include for-phone-only {
+        display: none;
+    }
 
     .section-title {
         font-size: 55px;
