@@ -1,3 +1,5 @@
+@import '../../assets/css/responsive.mixins.scss';
+
 :host {
     background: black;
     display: flex;
@@ -5,15 +7,13 @@
     overflow: hidden;
     position: relative;
     border: 2px solid black;
+    @include for-phone-only {
+        display: none;
+    }
 
     video {
         width: auto;
         height: 100vh;
-    }
-
-    a { 
-        color: white; 
-        text-decoration: none; 
     }
 
     .main-heading {
@@ -107,6 +107,10 @@
         animation-duration: 5s;
         animation: bounce 2s infinite !important;
         animation-delay: 26s !important;
+
+        a {
+            color: white;
+        }
       }
 }
 

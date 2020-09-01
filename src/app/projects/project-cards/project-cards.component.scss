@@ -1,6 +1,11 @@
+@import '../../../assets/css/responsive.mixins.scss';
+
 :host {
     position: relative;
-    top: 75px;
+
+    @include for-tablet-portrait-up  {
+        top: 75px;
+    }
 
     .project-cards-container {
         display: flex;

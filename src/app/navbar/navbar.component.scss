@@ -1,3 +1,5 @@
+@import '../../assets/css/responsive.mixins.scss';
+
 .toolbar {
     position: absolute;
     top: 0;
@@ -7,10 +9,13 @@
     display: flex;
     align-items: center;
     background-color: black;
-    opacity: .7;
     color: white;
     font-weight: 600;
     z-index: 2;
+
+    @include for-tablet-portrait-up {
+      opacity: .7;
+  }
   }
 
   .toolbar img {

@@ -1,4 +1,5 @@
-@import '../../mixins.scss';
+@import '../../assets/css/global.mixins.scss';
+@import '../../assets/css/responsive.mixins.scss';
 
 :host {
     justify-content: start;
@@ -6,8 +7,17 @@
     background-size: cover;
     padding: 50px;
     @include section-background(center center);
+    @include for-phone-only {
+        padding: 25px;
+    }
 
     .section-title {
-        font-size: 60px;
+        font-size: 50px;
+        
+        @include for-phone-only {
+            font-size: 40px;
+            color: white;
+            text-shadow: 2px 1px 30px black;
+        }
     }
 }

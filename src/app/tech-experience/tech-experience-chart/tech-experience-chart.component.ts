@@ -10,7 +10,7 @@ export class TechExperienceChartComponent implements OnInit {
 
   techExperience = [
     {
-      "name": "Environments",
+      "name": "Technical Environments",
       "children": [
         {
           "name": "Product Management",
@@ -220,6 +220,8 @@ export class TechExperienceChartComponent implements OnInit {
     const svg = d3.select(".tech-experience--chart").append("svg")
       .attr("width", '100%')
       .attr("height", height + margin.top + margin.bottom)
+      .attr("viewBox", "0 0 1100 850")
+      .classed("svg-content-responsive", true)
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
