@@ -1,11 +1,15 @@
+@import '../../../assets/css/responsive.mixins.scss';
+
 :host {
     margin-top: 50px;
     
     .skill-cards-container {
         display: flex;
         justify-content: center;
-        padding-left: 64px;
-        padding-right: 64px;
-        padding-bottom: 50px;
+        @include for-tablet-portrait-up {
+            padding-left: 64px;
+            padding-right: 64px;
+            padding-bottom: 50px;
+        }
     }
 }
