@@ -12,10 +12,10 @@
     }
 
     .section-title {
-        font-size: 60px;
+        font-size: 50px;
         
         @include for-phone-only {
-            font-size: 50px;
+            font-size: 40px;
             color: white;
             text-shadow: 2px 1px 30px black;
         }
