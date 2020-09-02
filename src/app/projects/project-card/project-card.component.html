@@ -1,6 +1,8 @@
-<mat-card class="project-card">
-    <mat-card-header>
-        <mat-card-title>{{ project.name }}</mat-card-title>
-    </mat-card-header>
-    <img class="project-logo" mat-card-image mat-card-image src="{{ '../../../assets/images/projects/' + project.path }}">
-</mat-card>
+<a [href]="project.url" target="_blank">
+    <mat-card class="project-card">
+        <mat-card-header>
+            <mat-card-title>{{ project.name }}</mat-card-title>
+        </mat-card-header>
+        <img class="project-logo" mat-card-image mat-card-image src="{{ '../../../assets/images/projects/' + project.path }}">
+    </mat-card>
+</a>

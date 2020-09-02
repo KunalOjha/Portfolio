@@ -9,19 +9,23 @@ export class ProjectCardsComponent {
   projects = [
     {
       name: 'The Travel Book',
-      path: 'the-travel-book.png'
+      path: 'the-travel-book.png',
+      url: 'http://www.thetravelbook.net'
     },
     {
       name: 'Checked Mate',
-      path: 'checked-mate.jpg'
+      path: 'checked-mate.jpg',
+      url: ''
     },
     {
       name: 'Counting Sheep',
-      path: 'counting-sheep.png'
+      path: 'counting-sheep.png',
+      url: ''
     },
     {
       name: 'Ochoas Mexican Grill',
-      path: 'ochoas-mexican-grill.png'
+      path: 'ochoas-mexican-grill.png',
+      url: 'http://www.ochoasmexicangrill.com'
     }
   ]
 
