@@ -8,9 +8,9 @@ describe('IntroComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IntroComponent ]
+      declarations: [IntroComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
