@@ -18,9 +18,9 @@ export class ProjectCardsComponent {
       url: ''
     },
     {
-      name: 'Counting Sheep',
-      path: 'counting-sheep.png',
-      url: ''
+      name: 'Count The Sheep',
+      path: 'count-the-sheep.svg',
+      url: 'http://countthesheep.net'
     },
     {
       name: 'Ochoas Mexican Grill',
